@@ -12,16 +12,40 @@ body {
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center;}
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 16px;
 }
 
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  text-align: center;
+}
+.text {
+  font-family: inherit;
+}
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+.header-flex .h2 {
+display: flex;
+align-items: center;
+
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -46,6 +71,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
   border: 1px solid #eee;
   padding: 0;
 }
